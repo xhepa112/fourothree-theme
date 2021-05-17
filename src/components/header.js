@@ -23,7 +23,7 @@ const Header = ({ state }) => {
           {/* Heading and Description of the site */}
           <TitleGroup>
           <StyledLink link="/">
-      <SiteTitle><img src={Logoimg} width="125px" height="" alt="403Page Labs Home"/></SiteTitle>
+      <SiteTitle><img src={Logoimg} width="125px" height="" alt="403Page Labs Home -- JEPA"/></SiteTitle>
     </StyledLink>
           </TitleGroup>
 
