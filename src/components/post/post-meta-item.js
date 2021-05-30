@@ -25,7 +25,7 @@ const MetaIcon = styled.span`
 
 const MetaText = styled.span`
   a {
-    color: inherit;
+    color: #073999;
     text-decoration: none;
   }
 `;

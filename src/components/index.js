@@ -1,6 +1,5 @@
 import { connect, Global, Head, styled } from "frontity";
 import React from "react";
-import Footer from "./footer";
 import globalStyles from "./styles/global-styles";
 import Header from "./header";
 import Archive from "./archive";
@@ -11,6 +10,7 @@ import Post from "./post";
 import SearchResults from "./search/search-results";
 import SkipLink from "./styles/skip-link";
 import MetaTitle from "./page-meta-title";
+import NavMenu from './navMenu'
 
 
 
@@ -32,7 +32,7 @@ const Theme = ({ state, libraries }) => {
       {/* Add some global styles for the whole site, like body or a's. 
         Not classes here because we use CSS-in-JS. Only global HTML tags. */}
       <Global styles={globalStyles(state.theme.colors, state.theme.fontSets)} />
-
+<NavMenu/>
       {/* Add some metatags to the <head> of the HTML. */}
       <MetaTitle />
       <Head>
@@ -62,7 +62,7 @@ const Theme = ({ state, libraries }) => {
       </div>
       <div style={{ minHeight: "96px", padding:"0% 10%", maxWidth:"1600px", margin:"45px auto"}}><Pagination /></div>
 
-      <Footer />
+      {/*<Footer />*/}
     </>
   );
 };

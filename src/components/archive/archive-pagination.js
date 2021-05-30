@@ -75,8 +75,8 @@ grid-gap: 5rem;
 const Text = styled.div`
 display: inline-block;
 border-radius: 1px;
-background: -webkit-linear-gradient(to right, #ee076e, #f81f01); 
-background: linear-gradient(to right, #ee076e, #f81f01); 
+background: -webkit-linear-gradient(to right, #007BB6, #073999); 
+background: linear-gradient(to right, #007BB6, #073999); 
 border: none;
 color: #FFFFFF;
 text-align: center;

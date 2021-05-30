@@ -48,7 +48,7 @@ const MenuNav = styled.nav`
 
 const Menu = styled.ul`
   display: flex;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: -0.0277em;
   flex-wrap: wrap;
@@ -69,7 +69,7 @@ const MenuItem = styled.li`
 padding: 0;
   float: bottom;
   margin: 0px 18px;
-  color: #353535;
+  color: #ccc;
   font-weight: 700;
   box-sizing: border-box;
   flex-shrink: 0;
@@ -82,7 +82,7 @@ const MenuLink = styled(Link)`
   line-height: 2em;
   padding: 10px 5px 5px 5px;
   border-top: 10px solid transparent;
-
+  color: #ccc
   &:hover,
   &[aria-current="page"] {
     line-height: 2em;

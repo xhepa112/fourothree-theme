@@ -1,12 +1,36 @@
 {
-  "name": "@fourothreepage/fourothree-theme",
-  "version": "1.0.5",
-  "description": "The theme for 403page.com.",
-  "keywords": [
-    "frontity",
-    "frontity-fourothree-theme"
+  "_from": "@fourothreepage/fourothree-theme",
+  "_id": "@fourothreepage/fourothree-theme@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-SdQvIZD0ns/E4VdY59zbONs/EoNm3TkTHKFSTm6PIK0fhAn4e4dbcCOXemK6UOjHngrClCK4mvi05Gaw6Pv15A==",
+  "_location": "/@fourothreepage/fourothree-theme",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@fourothreepage/fourothree-theme",
+    "name": "@fourothreepage/fourothree-theme",
+    "escapedName": "@fourothreepage%2ffourothree-theme",
+    "scope": "@fourothreepage",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
-  "license": "GPL-2.0-only",
+  "_resolved": "https://registry.npmjs.org/@fourothreepage/fourothree-theme/-/fourothree-theme-1.0.5.tgz",
+  "_shasum": "799c923cd791c8d677a9f570e7dba7f61d3f8e91",
+  "_spec": "@fourothreepage/fourothree-theme",
+  "_where": "C:\\Users\\Lenovo\\Desktop\\stylefy\\my-first-frontity-project",
+  "author": {
+    "name": "403page"
+  },
+  "bugs": {
+    "url": "https://github.com/403pagelabs/fourothree-theme/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "@frontity/components": "^1.1.14",
     "@frontity/hooks": "^1.1.14",
@@ -14,18 +38,23 @@
     "frontity": "^1.4.2",
     "react-spinners": "^0.5.4"
   },
+  "deprecated": false,
+  "description": "The theme for 403page.com.",
+  "devDependencies": {},
+  "homepage": "https://github.com/403pagelabs/fourothree-theme#readme",
+  "keywords": [
+    "frontity",
+    "frontity-fourothree-theme"
+  ],
+  "license": "GPL-2.0-only",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "@fourothreepage/fourothree-theme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/403pagelabs/fourothree-theme.git"
   },
-  "author": "403page",
-  "bugs": {
-    "url": "https://github.com/403pagelabs/fourothree-theme/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/403pagelabs/fourothree-theme#readme",
-  "devDependencies": {}
+  "version": "1.0.5"
 }

@@ -129,8 +129,8 @@ box-shadow: 0px 10px 30px 0px rgba(20,3,67,.09);
 export const PostHeader = styled.header`
   text-align: center;
   padding: 40px 1px;
-  background: -webkit-linear-gradient(to right, #ee076e, #f81f01); 
-  background: linear-gradient(to right, #ee076e, #f81f01); 
+  background: -webkit-linear-gradient(to right, #007BB6, #073999); 
+  background: linear-gradient(to right, #007BB6, #073999); 
   border-radius: 6px 6px 0 0;
     :hover {
     }

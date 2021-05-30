@@ -295,7 +295,7 @@ const elementBase = colors => css`
   }
 
   a {
-    color: ${colors.primary};
+    color: #007BB6;
     text-decoration: underline;
   }
 

@@ -25,18 +25,17 @@ const SearchResults = ({ state, libraries }) => {
 
   return (
     <>
-      <ArchiveHeader label="Search" labelColor={primary}>
+      <ArchiveHeader label="Suche" labelColor={primary}>
         <span>{`“${reverseFormat(searchQuery)}”`}</span>
         <IntroText size="thin">
           {isEmpty ? (
             <Text>
-              We could not find any results for your search. You can give it
-              another try through the search form below.
+              Wir konnten keine Ergebnisse für Ihre Suche finden. 
+              Sie können es nochmal versuchen durch das formular unten.
             </Text>
           ) : (
             <Text>
-              We found {total} {total === 1 ? "result" : "results"} for your
-              search.
+              Wir haben {total} {total === 1 ? "result" : "ergebnisse"} gefunden.
             </Text>
           )}
         </IntroText>
@@ -56,6 +55,7 @@ const SearchResults = ({ state, libraries }) => {
 export default connect(SearchResults);
 
 const IntroText = styled(SectionContainer)`
+  
   width: 100%;
   margin-top: 2rem;
   font-weight: initial;

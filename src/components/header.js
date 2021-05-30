@@ -7,7 +7,7 @@ import SearchModal from "./search/search-modal";
 import MobileSearchButton from "./mobile/search-button";
 import MobileMenuButton from "./mobile/menu-button";
 import MobileMenuModal from "./mobile/menu-modal";
-import Logoimg from './images/logo.svg';
+import Logoimg from './images/360-Kompakt-logo.png';
 
 
 const Header = ({ state }) => {
@@ -23,7 +23,7 @@ const Header = ({ state }) => {
           {/* Heading and Description of the site */}
           <TitleGroup>
           <StyledLink link="/">
-      <SiteTitle><img src={Logoimg} width="125px" height="" alt="403Page Labs Home -- JEPA"/></SiteTitle>
+      <SiteTitle><img src={Logoimg} width="500px" height="auto" alt="360Kompakt"/></SiteTitle>
     </StyledLink>
           </TitleGroup>
 
@@ -88,7 +88,7 @@ top: 0;
 z-index: 10;
 background-color:black;
 width:100%;
-height:70px;
+height:12vh;
 background: white;
 
   @media (max-width:998px) {
@@ -159,6 +159,7 @@ const StyledLink = styled(Link)`
 
 const HeaderNavigationWrapper = styled.div`
   display: none;
+  
 
   @media (min-width: 1000px) {
     align-items: center;

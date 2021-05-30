@@ -22,7 +22,7 @@ const fourothree = {
           light: "#DCD7CA",
           lighter: "#f9f9f9"
         },
-        primary: "#ee076e",
+        primary: "#007BB6",
         headerBg: "#ffffff",
         footerBg: "#ffffff",
         bodyBg: "#f9f9f9"

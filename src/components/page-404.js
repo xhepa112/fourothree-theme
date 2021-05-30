@@ -42,4 +42,5 @@ const IntroText = styled.div`
 const Container = styled(SectionContainer)`
   text-align: center;
   padding-top: 8rem;
+  background: #007BB6 !importmant;
 `;
