@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {connect, styled} from 'frontity'
-import Link from '../../../../../node_modules12/@fourothreepage/fourothree-theme/src/components/link2'
+import Link from '../../../../../node_modules/@fourothreepage/fourothree-theme/src/components/link2'
 /*import 'bootstrap/dist/css/bootstrap.min.css'*/
 {/*import fb_favicon from './img/favicon.ico'*/}
 {/*import lightweb_favicon from './img/lightweb.ico'*/}
