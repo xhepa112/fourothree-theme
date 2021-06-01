@@ -11,6 +11,7 @@ import SearchResults from "./search/search-results";
 import SkipLink from "./styles/skip-link";
 import MetaTitle from "./page-meta-title";
 import NavMenu from './navMenu'
+import Footer from './footer'
 
 
 
@@ -62,7 +63,7 @@ const Theme = ({ state, libraries }) => {
       </div>
       <div style={{ minHeight: "96px", padding:"0% 10%", maxWidth:"1600px", margin:"45px auto"}}><Pagination /></div>
 
-      {/*<Footer />*/}
+      <Footer />
     </>
   );
 };
