@@ -41,8 +41,8 @@ const HeaderToggle = styled.div`
   }
 
   @media (min-width: 1220px) {
-    margin-right: 6rem;
-    margin-left: 4rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
   @media (max-width: 999px) {
     margin-right: 6rem;

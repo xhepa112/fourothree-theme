@@ -1,5 +1,5 @@
 import React from "react";
-import { connect, styled } from "frontity";
+import {connect, styled} from "frontity";
 import Link from "./link";
 import Navigation from "./navigation/navigation";
 import SearchButton from "./search/search-button";
@@ -10,42 +10,42 @@ import MobileMenuModal from "./mobile/menu-modal";
 import Logoimg from './images/360-Kompakt-logo.png';
 
 
-const Header = ({ state }) => {
-  const { title, description } = state.frontity;
-  const { headerBg } = state.theme.colors;
+const Header = ({state}) => {
+    const {title, description} = state.frontity;
+    const {headerBg} = state.theme.colors;
 
-  
-  return (
-    <PageHeader bg={headerBg} id="site-header">
-      <HeaderInner>
-        <TitleWrapper>
 
-          {/* Heading and Description of the site */}
-          <TitleGroup>
-          <StyledLink link="/">
-      <SiteTitle><img src={Logoimg} width="500px" height="auto" alt="360Kompakt"/></SiteTitle>
-    </StyledLink>
-          </TitleGroup>
+    return (
+        <PageHeader bg={headerBg} id="site-header">
+            <HeaderInner>
+                <TitleWrapper>
 
-          {/* Mobile menu button and modal */}
-          <MobileMenuButton />
-          <MobileMenuModal />
-          {/* Search button on mobile */}
-          {state.theme.showSearchInHeader && <MobileSearchButton />}
-        </TitleWrapper>
+                    {/* Heading and Description of the site */}
+                    <TitleGroup>
+                        <StyledLink link="/">
+                            <SiteTitle><img src={Logoimg} alt="360Kompakt"/></SiteTitle>
+                        </StyledLink>
+                    </TitleGroup>
 
-        <HeaderNavigationWrapper>
-          {/* Desktop navigation links */}
-          <Navigation />
-          {/* Desktop search button */}
-          {state.theme.showSearchInHeader && <SearchButton />}
-        </HeaderNavigationWrapper>
-      </HeaderInner>
-      {/* Global search modal */}
-      <SearchModal />
+                    {/* Mobile menu button and modal */}
+                    <MobileMenuButton/>
+                    <MobileMenuModal/>
+                    {/* Search button on mobile */}
+                    {state.theme.showSearchInHeader && <MobileSearchButton/>}
+                </TitleWrapper>
 
-    </PageHeader>
-  );
+                <HeaderNavigationWrapper>
+                    {/* Desktop navigation links */}
+                    <Navigation/>
+                    {/* Desktop search button */}
+                    {state.theme.showSearchInHeader && <SearchButton/>}
+                </HeaderNavigationWrapper>
+            </HeaderInner>
+            {/* Global search modal */}
+            <SearchModal/>
+
+        </PageHeader>
+    );
 };
 
 // Connect the Header component to get access to the `state` in it's `props`
@@ -57,7 +57,7 @@ const TitleGroup = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: -1rem 0 0 -2.4rem;
+    //margin: -1rem 0 0 -2.4rem;
   }
 `;
 
@@ -71,7 +71,7 @@ const TitleWrapper = styled.div`
 
   @media (min-width: 1000px) {
     width: auto;
-    margin-right: 4rem;
+    margin-right: 2rem;
     max-width: 50%;
     padding: 0;
     text-align: left;
@@ -79,22 +79,22 @@ const TitleWrapper = styled.div`
 `;
 
 const PageHeader = styled.header`
-display: flex;
-align-items: center;
-flex-direction: column;
-background-color: #fff;
-position: sticky;
-top: 0;
-z-index: 10;
-background-color:black;
-width:100%;
-height:12vh;
-background: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: black;
+  width: 100%;
+  height: 14vh;
+  background: white;
 
-  @media (max-width:998px) {
+  @media (max-width: 998px) {
     background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #f9f9f9 50%, #f9f9f9 100%);
     box-shadow: 0px 0px 3px #c1c1c1;
-    height:70px;
+    height: 70px;
   }
 `;
 
@@ -108,6 +108,7 @@ const HeaderInner = styled.div`
   z-index: 100;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
 
   @media (min-width: 700px) {
     width: calc(100% - 2rem);
@@ -115,16 +116,21 @@ const HeaderInner = styled.div`
 `;
 
 const SiteTitle = styled.h1`
-img{
-  margin-left: -75px;
-}
+  //img {
+  //  margin-left: -75px;
+  //}
+  
+  img {
+    max-width: 300px;
+  }
+
   font-size: 2.1rem;
   font-weight: 600;
   line-height: 1;
   margin: 0;
 
   @media (min-width: 1000px) {
-    margin: 1rem 9rem 0rem 9rem;
+    //margin: 1rem 9rem 0rem 9rem;
   }
   @media (min-width: 700px) {
     font-size: 2.4rem;
@@ -143,7 +149,7 @@ const SiteDescription = styled.div`
   transition: all 0.15s linear;
 
   @media (min-width: 1000px) {
-    margin: 1rem 0 0 2.4rem;
+    //margin: 1rem 0 0 2.4rem;
   }
 
   @media (min-width: 700px) {
@@ -163,7 +169,7 @@ const StyledLink = styled(Link)`
 
 const HeaderNavigationWrapper = styled.div`
   display: none;
-  
+
 
   @media (min-width: 1000px) {
     align-items: center;
