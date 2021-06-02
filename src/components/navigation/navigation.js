@@ -68,7 +68,7 @@ const Menu = styled.ul`
 const MenuItem = styled.li`
 padding: 0;
   float: bottom;
-  margin: 0px 18px;
+  margin: 0px 15px;
   color: #ccc;
   font-weight: 700;
   box-sizing: border-box;

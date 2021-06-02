@@ -19,7 +19,7 @@ const SearchButton = ({ state, actions }) => {
           aria-expanded={isSearchModalOpen}
           onClick={openSearchModal}
           aria-label="Click to open search bar..."
-          style={{ bottom: "0.5rem" }}
+          style={{ bottom: "0.5rem" , padding: "0 1rem"}}
         >
           <LabeledIcon icon={SearchIcon} label="" />
         </BaseToggle>
@@ -41,8 +41,8 @@ const HeaderToggle = styled.div`
   }
 
   @media (min-width: 1220px) {
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
   @media (max-width: 999px) {
     margin-right: 6rem;

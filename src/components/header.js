@@ -116,12 +116,14 @@ const HeaderInner = styled.div`
 `;
 
 const SiteTitle = styled.h1`
-  //img {
-  //  margin-left: -75px;
-  //}
-  
   img {
-    max-width: 300px;
+    max-width: 180px;
+  }
+  
+  @media(min-width: 1200px) {
+    img {
+      max-width: 300px;
+    }
   }
 
   font-size: 2.1rem;
