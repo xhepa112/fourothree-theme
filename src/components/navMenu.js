@@ -73,6 +73,7 @@ const MenuStyle = styled.div`
 display: inline;
 flex-direction:row;
 justify-content: space-around;
+
 @media(max-width: 700px){
   font-size: smaller;
 }
@@ -85,6 +86,8 @@ ul {
   } 
   
   li {
+    
+    padding-left: 50px;
     color: black;
     margin:5px;
     

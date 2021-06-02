@@ -99,6 +99,7 @@ background: white;
 `;
 
 const HeaderInner = styled.div`
+
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -114,6 +115,9 @@ const HeaderInner = styled.div`
 `;
 
 const SiteTitle = styled.h1`
+img{
+  margin-left: -75px;
+}
   font-size: 2.1rem;
   font-weight: 600;
   line-height: 1;
@@ -166,3 +170,4 @@ const HeaderNavigationWrapper = styled.div`
     display: flex;
   }
 `;
+
