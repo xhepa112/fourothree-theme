@@ -20,6 +20,8 @@ const Header = ({state}) => {
             <HeaderInner>
                 <TitleWrapper>
 
+                    <MobileMenuButton/>
+                    <MobileMenuModal/>
                     {/* Heading and Description of the site */}
                     <TitleGroup>
                         <StyledLink link="/">
@@ -28,8 +30,6 @@ const Header = ({state}) => {
                     </TitleGroup>
 
                     {/* Mobile menu button and modal */}
-                    <MobileMenuButton/>
-                    <MobileMenuModal/>
                     {/* Search button on mobile */}
                     {state.theme.showSearchInHeader && <MobileSearchButton/>}
                 </TitleWrapper>
