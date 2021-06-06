@@ -55,10 +55,10 @@ export const BaseToggle = styled.button`
 export const NavToggle = styled(BaseToggle)`
   position: absolute;
   bottom: 0;
-  right: 4rem;
+  left: 1rem;
   top: 0;
   width: 6.6rem;
-  display: none;
+  //display: none;
 
   @media (min-width: 1000px) {
     right: 2rem;
