@@ -81,8 +81,9 @@ const Post = ({ state, actions, libraries }) => {
       )*/}
 
       {/* If the post has an excerpt (short summary text), we render it */}
+      { console.log(state.router.link) }
       {post.content && (
-        <PostInner size="thin">
+        <PostInner size="thin" className={state.router.link === '/unsere-autoren/' ? 'fix-author-imgs' : ''}>
           <EntryContent>
             <Html2React html={post.content.rendered} />
           </EntryContent>
@@ -109,10 +110,27 @@ const Header = styled(PostHeader)`
 
 const PostArticle = styled(_Post)`
   padding-top: 0 !important;
+
+  @media(min-width: 700px) {
+  .fix-author-imgs {
+    img {
+      display: inline-block;
+      position: static;
+      float: left;
+      margin-right: 2rem;
+          max-height: 215px;
+    }
+  }
+
+  .fix-author-imgs span[height] {
+    padding-bottom: 0;
+  }
+}
   
 `;
 
 const FeaturedImage = styled(FeaturedMedia)`
+  display: none;
   margin-top: 0 !important;
   position: relative;
   
