@@ -17,7 +17,7 @@ const newHandler = {
       const postType = libraries.source.handlers.find(
         handler => handler.name == "post type"
       );
-      await postType.func({ route, params, state, libraries });
+      await postType.func({ link: route, params, state, libraries });
     }
   }
 };
