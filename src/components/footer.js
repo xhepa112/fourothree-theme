@@ -14,56 +14,57 @@ function Footer() {
             <div className="container">
                 <div className="row">
                   <div className = "lists">
-                    <div className="col-sm-6 col-md-3 item">
+                    <div className="text-right">
                         <h3>Übersicht</h3>
                         <ul>
-                        <li>
-                        <Link href='/ueber-uns/'>Über Uns</Link>
-                        </li>
-                        <li>
-                        <Link href='/unsere-autoren/'>Autoren</Link>
-                        </li>
-                        <li>
-                        <Link href='/kontakt/'>Kontakt</Link>
-                        </li>
-                        <li>
-                        <Link href='/impressum/'>Impressum</Link>
-                        </li>
-                        <li>
-                        <Link href='/datenschutz/'>Datenschutz</Link>
-                        </li>
-                        <li>
-                        <Link href='/sitemap/'>Sitemap</Link>
-                        </li>
+                          <li>
+                            <Link href='/ueber-uns/'>Über Uns</Link>
+                          </li>
+                          <li>
+                            <Link href='/unsere-autoren/'>Autoren</Link>
+                          </li>
+                          <li>
+                            <Link href='/kontakt/'>Kontakt</Link>
+                          </li>
+                          <li>
+                            <Link href='/impressum/'>Impressum</Link>
+                          </li>
+                          <li>
+                            <Link href='/datenschutz/'>Datenschutz</Link>
+                          </li>
                         </ul>
                     </div>
-                    <div className="col-sm-6 col-md-3 item">
+                    <div className="">
                         <h3>Kategorien</h3>
                         <ul>
-                       <li>  <Link href='/category/finanzen/'>Finanzen</Link></li>
-                        <li> <Link href='/category/technologie/'>Technologie</Link></li>   
-                        <li> <Link href='/category/lifestyle/'>Lifestyle</Link></li>  
-                        <li> <Link href='/category/management/'>Management</Link></li> 
-                        <li> <Link href='/category/marketing/'>Marketing</Link></li>
-                        <li> <Link href='/category/technologie/'>Technologie</Link></li> 
-                        <li> <Link href='/category/recht/'>Recht</Link></li>
+                          <li>
+                            <Link href='/category/finanzen/'>Finanzen</Link>
+                          </li>
+                          <li>
+                            <Link href='/category/technologie/'>Technologie</Link>
+                          </li>   
+                          <li>
+                            <Link href='/category/lifestyle/'>Lifestyle</Link>
+                          </li>  
+                          <li>
+                            <Link href='/category/management/'>Management</Link>
+                          </li> 
+                          <li>
+                            <Link href='/category/marketing/'>Marketing</Link>
+                          </li>
+                          <li>
+                            <Link href='/category/technologie/'>Technologie</Link>
+                          </li> 
+                          <li>
+                            <Link href='/category/recht/'>Recht</Link>
+                          </li>
                         </ul>
+                      </div>
                     </div>
-                    </div>
-                    <div className="col-md-6-item-text">
+                    <div className="px-8 text-center my-8">
                         
                         <p>360kompakt.de - 2021 - Präsentiert von Lightweb Media</p>
                     </div>
-                    {/* <div className="col item social">
-                      <a href="#"><i className="icon ion-social-facebook">
-                        <img src={fb_favicon} width="auto" height="auto" alt="Facebook"/>
-                        </i>
-                        </a>
-                      <a href="#"><i className="icon ion-social-twitter">
-                        <img src={lightweb_favicon} width="auto" height="auto" alt="360Kompakt"/>
-                        </i>
-                        </a>
-                        </div>*/}
                 </div> 
                 <p className="copyright">Lightweb Media © 2021</p>
             </div>
@@ -76,21 +77,39 @@ function Footer() {
 export default connect(Footer)
 
 const FooterStyle = styled.div`
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.px-8 {
+  padding: 0 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .footer-dark {
   width: 100%;
     padding:50px 0;
     color:#f0f9ff;
     background-color:#282d32;
   }
-  
+  .text-right {
+    text-align: right;
+  }
   .lists{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    max-width: 280px;
+    margin: 0 auto;
+    
   }
   
   .footer-dark h3 {
-    margin-left: 40px;
+    // margin-left: 40px;
     margin-top:0;
     margin-bottom:12px;
     font-weight:bold;
@@ -98,12 +117,17 @@ const FooterStyle = styled.div`
   }
   
   .footer-dark ul {
-    
+    margin:0;
     padding:0;
     list-style:none;
     line-height:1.6;
     font-size:14px;
     margin-bottom:0;
+  }
+
+  .footer-dark ul li {
+    margin: 0;
+    margin-bottom: 0.5rem;
   }
   
   .footer-dark ul a {
