@@ -130,7 +130,6 @@ const PostArticle = styled(_Post)`
 `;
 
 const FeaturedImage = styled(FeaturedMedia)`
-  display: none;
   margin-top: 0 !important;
   position: relative;
   
