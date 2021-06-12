@@ -78,14 +78,14 @@ const SearchModal = ({ state, actions, libraries }) => {
               ref={inputRef}
               type="search"
               defaultValue={searchQuery || ""}
-              placeholder="Search ..."
+              placeholder="Suchen ..."
               name="search"
             />
-            <SearchButton bg={primary}>Search</SearchButton>
+            <SearchButton bg={primary}>Suchen</SearchButton>
           </SearchForm>
 
           <CloseButton onClick={closeSearchModal}>
-            <ScreenReaderText>Close search</ScreenReaderText>
+            <ScreenReaderText>Suche schliessen</ScreenReaderText>
             <CloseIcon />
           </CloseButton>
         </SectionInner>

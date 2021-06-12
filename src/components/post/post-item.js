@@ -149,10 +149,10 @@ const getMaxWidth = props => maxWidths[props.size] || maxWidths["medium"];
 export const SectionContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
-  width: calc(100% - 4rem);
+  width: calc(100% - 2rem);
   min-height: 10px;
-  max-width: 80%;
   @media (min-width: 700px) {
+    max-width: 80%;
     width: calc(100% - 8rem);
     
   }
@@ -189,7 +189,7 @@ export const EntryContent = styled.div`
   max-width: unset;
   letter-spacing: normal;
   font-size: 1em;
-  padding: 15px;
+  padding: 10px;
   color: #333;
 
   @media (min-width: 700px) {
