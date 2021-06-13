@@ -38,25 +38,25 @@ function Footer() {
                         <h3>Kategorien</h3>
                         <ul>
                           <li>
-                            <Link href='/category/finanzen/'>Finanzen</Link>
+                            <Link href='/finanzen/'>Finanzen</Link>
                           </li>
                           <li>
-                            <Link href='/category/technologie/'>Technologie</Link>
+                            <Link href='/technologie/'>Technologie</Link>
                           </li>   
                           <li>
-                            <Link href='/category/lifestyle/'>Lifestyle</Link>
+                            <Link href='/lifestyle/'>Lifestyle</Link>
                           </li>  
                           <li>
-                            <Link href='/category/management/'>Management</Link>
+                            <Link href='/management/'>Management</Link>
                           </li> 
                           <li>
-                            <Link href='/category/marketing/'>Marketing</Link>
+                            <Link href='/marketing/'>Marketing</Link>
                           </li>
                           <li>
-                            <Link href='/category/technologie/'>Technologie</Link>
+                            <Link href='/technologie/'>Technologie</Link>
                           </li> 
                           <li>
-                            <Link href='/category/recht/'>Recht</Link>
+                            <Link href='/recht/'>Recht</Link>
                           </li>
                         </ul>
                       </div>
